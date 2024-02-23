@@ -4,7 +4,7 @@ This is a simple single page application developed to display tasks which are fe
 
 This application codebase has two folders
 
-- client/task-management : This folder contains the frontend codebase (React + GraphQL using Apollo Client)
+- client : This folder contains the frontend codebase (React + GraphQL using Apollo Client)
 - server : This folder contains the backend codebase (NodeJS + GraphQL using Apollo Server)
 
 README files of individual folders have more information on how to install and test
