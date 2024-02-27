@@ -1,12 +1,12 @@
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-import { Container, Typography, Grid } from '@mui/material';
-import FilterList from './components/FilterList';
-import TaskContainer from './components/TaskContainer';
-import { TaskProvider } from './taskContext';
-import { useState } from 'react';
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+import { Container, Typography, Grid } from "@mui/material";
+import FilterList from "./components/FilterList";
+import TaskContainer from "./components/TaskContainer";
+import { TaskProvider } from "./taskContext";
+import { useState } from "react";
 
 const client = new ApolloClient({
-  uri: 'http://localhost:8000/graphql',
+  uri: "http://localhost:8000/graphql",
   cache: new InMemoryCache(),
 });
 
@@ -17,8 +17,8 @@ function App() {
       <Container
         maxWidth="lg"
         sx={{
-          backgroundColor: '#a1c2c2',
-          height: '100%',
+          backgroundColor: "#a1c2c2",
+          height: "100%",
           borderRadius: 5,
           paddingY: 3,
         }}
@@ -26,7 +26,12 @@ function App() {
         <TaskProvider value={[tasks, setTasks]}>
           <Grid container spacing={3} marginTop={3}>
             <Grid item={true} xs={12}>
-              <Typography variant="h4" component="h1" sx={{ mb: 2 }} align="center">
+              <Typography
+                variant="h4"
+                component="h1"
+                sx={{ mb: 2 }}
+                align="center"
+              >
                 Task Management
               </Typography>
             </Grid>
